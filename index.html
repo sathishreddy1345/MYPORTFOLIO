@@ -4,55 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sathish Reddy — Portfolio</title>
-
-  <!-- Link CSS file -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">Sathish Reddy</div>
+  <header class="container">
+    <h2 class="logo">Sathish Reddy</h2>
+
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="hero" id="about">
-    <div class="hero-text">
-      <h1>Hi, I'm <span>Sathish Reddy</span></h1>
-      <p>Aspiring Software Developer with skills in <b>HTML, CSS, and Java</b>, focused on building clean and responsive UI designs.</p>
-      <a href="#contact" class="btn">Contact Me</a>
+
+  <!-- HERO WITH PROFILE IMAGE -->
+  <section class="hero container" id="about">
+
+    <div class="profile-box">
+      <img src="myphoto.jpg" alt="Profile photo" class="profile-img">
     </div>
+
+    <div>
+      <h1>Hello, I’m <span>Sathish</span></h1>
+      <p>
+        Aspiring Software Developer focused on building clean,
+        simple and responsive user interfaces using HTML, CSS,
+        and Java fundamentals. I enjoy learning, improving my work,
+        and developing practical projects.
+      </p>
+
+      <a href="resume.pdf" class="btn" download>Download Resume (PDF)</a>
+    </div>
+
   </section>
 
-  <section class="card-section" id="projects">
+
+  <!-- PROJECTS -->
+  <section class="container section" id="projects">
     <h2 class="section-title">Projects</h2>
 
-    <div class="cards">
+    <div class="grid">
+
+      <!-- FRAUDSHIELD PROJECT WITH LINK -->
       <div class="card">
-        <h3>SerenityMind Chatbot</h3>
-        <p>AI-based mental health chatbot providing calming guidance and breathing exercises.</p>
+        <h3>FraudShield Detection App</h3>
+        <p>
+          Streamlit-based machine learning dashboard that uses
+          ensemble models to analyze and detect possible fraudulent activity.
+        </p>
+        <a href="https://your-fraudshield-link.com" class="link-btn" target="_blank">
+          Open Project
+        </a>
       </div>
 
       <div class="card">
         <h3>StayVerse — Hotel Management</h3>
-        <p>Java Swing & MySQL based hotel booking and billing desktop application.</p>
+        <p>
+          Desktop application developed using Java Swing and MySQL
+          for managing room booking, customers, and billing process.
+        </p>
       </div>
 
       <div class="card">
-        <h3>FraudShield Detection App</h3>
-        <p>Streamlit-based ML app using ensemble models for fraud detection.</p>
+        <h3>SerenityMind Chatbot</h3>
+        <p>
+          AI-assisted chatbot designed to provide calm interaction,
+          guided breathing, and supportive experience for users.
+        </p>
       </div>
+
     </div>
   </section>
 
-  <section class="card-section" id="contact">
+
+  <!-- INTERNSHIP & CERTIFICATES LINKS -->
+  <section class="container section">
+    <h2 class="section-title">Internship & Certificates</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Web Development Internship</h3>
+        <p>Worked on practice-based UI tasks using HTML and CSS.</p>
+        <a href="https://your-internship-certificate-link.com" class="link-btn" target="_blank">
+          View Internship Certificate
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Achievements & Certifications</h3>
+        <p>Includes hackathon participation and project-based learning.</p>
+        <a href="https://your-certificate-link.com" class="link-btn" target="_blank">
+          View Certificates
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SKILLS -->
+  <section class="container section" id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <ul class="skills-list">
+      <li>HTML & Semantic Structure</li>
+      <li>CSS — Responsive Layouts</li>
+      <li>Java Basics</li>
+      <li>SQL Fundamentals</li>
+      <li>UI Structure & Layout Understanding</li>
+    </ul>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="container section" id="contact">
     <h2 class="section-title">Contact</h2>
 
-    <div class="cards">
+    <div class="grid">
       <div class="card">
         <h3>Email</h3>
         <p>omreddy1345@gmail.com</p>
@@ -60,7 +133,7 @@
 
       <div class="card">
         <h3>Phone</h3>
-        <p>+91 9701267637</p>
+        <p>+91 970126763*</p>
       </div>
 
       <div class="card">
@@ -69,6 +142,7 @@
       </div>
     </div>
   </section>
+
 
   <footer>
     © 2026 — Portfolio by Sathish Reddy
